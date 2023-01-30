@@ -1,0 +1,7 @@
+version: v1
+plugins:
+  - plugin: buf.build/community/timostamm-protobuf-ts
+    out: test/src/gen
+    opt:
+      - client_grpc1
+      - generate_dependencies

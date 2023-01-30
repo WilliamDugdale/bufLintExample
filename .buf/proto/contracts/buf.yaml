@@ -1,0 +1,8 @@
+version: v1
+name: buf.build/zipcube/contracts
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - MINIMAL

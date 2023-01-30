@@ -1,0 +1,10 @@
+version: v1
+name: buf.build/zipcube/danielvladco
+deps:
+  - buf.build/googleapis/googleapis
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT

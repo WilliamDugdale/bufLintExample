@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package global.reservation.v1;
+
+enum Status {
+ STATUS_UNSPECIFIED = 0;
+ STATUS_SUCCESS = 1;
+ STATUS_FAILED = 2;
+}

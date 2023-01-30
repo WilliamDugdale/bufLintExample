@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package contracts.graphql.v1;
+option go_package = "graphql/v1";
+
+import "global/reservation/v1/status.proto";
+import "vendor/danielvladco/v1/graphql.proto";
+
+message AssetSearchInput {
+  string id = 1;
+}
+
+message AssetSearchResponse {
+  global.reservation.v1.Status status = 1;
+}
+
+service Asset {
+  rpc Search(AssetSearchInput) returns (AssetSearchResponse) {
+     option (vendor.danielvladco.v1.rpc) = {type: TYPE_QUERY};
+  }
+}
