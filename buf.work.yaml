@@ -1,5 +1,3 @@
 version: v1
 directories:
-  - .buf/proto/vendor/danielvladco
-  - .buf/proto/global
-  - .buf/proto/contracts
+  - .buf/proto
